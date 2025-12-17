@@ -1,0 +1,153 @@
+:root{
+            --gold:#d4af37;--dark:#0f172a;--green:#0b3d2e;
+            }
+            *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+                font-family:Poppins
+            }
+
+
+            body{
+               
+                 background:linear-gradient(135deg,var(--green),var(--dark)); 
+                 color:#fff;
+                 align-items: center;
+                
+            }
+            .container{
+                max-width:1200px;
+                margin:auto;
+                padding:40px 20px}
+
+        
+            header{
+                padding:40px 20px;
+                text-align:center;
+                position:relative;
+                background: linear-gradient(145deg,var(--green),var(--dark));
+                height: 300px;
+                width: 100%;
+                border-radius: 30px;
+                border: 5px solid rgba(255, 255, 255, 0.25);
+                
+                
+            }
+
+            header h1{
+                padding-top: 00px;
+                color:var(--gold);
+                font-size:3rem;
+            }
+
+            
+            .services{
+                display:grid;
+                grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+                gap: 25px;              
+            }
+            
+            .service-category {
+                color: #171301;
+                background:rgb(243, 254, 255);
+                text-align: center;
+                font-size: 30px;
+                border-radius: 20px;
+                width: 100%;
+               
+            }
+
+            .card
+            {
+                background:rgba(255,255,255,.08);
+                padding:25px;
+                border-radius:18px;
+                border: 5px solid rgba(255, 255, 255, 0.25);
+            
+            }
+            .card h3 {
+            color: rgb(221, 190, 14);
+            }
+
+
+            .card p {font-size:.95rem;
+
+            }
+
+            /* IMAGE SLIDER */
+            .img-box{
+                height:400px;
+                position: relative;
+                overflow:hidden;
+                border-radius:12px;
+                backdrop-filter: blur(50px);
+               
+            }
+            .img-box img{
+                position: absolute;
+                width:100%;
+                height: 100%;
+                object-fit:cover;
+                opacity: 1s ease-in-out ;
+                }
+           .img-box img.active {
+            opacity: 1;
+           }
+         
+            .slideshow {
+                position: relative;
+                width: 100%;
+                height: 400px;
+                overflow: hidden;
+                border-radius: 15px;
+            }
+
+            .slideshow img {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+            }
+
+            .slideshow img.active {
+                opacity: 1;
+            }
+                
+
+            .whatsapp {
+                
+                text-align: center;
+            }
+            .whatsapp_btn {
+                    padding: 8px 40px;
+                    font-size: 16px;
+                    border-radius: 10px;
+                    background-color: rgb(11, 121, 71);
+                    color: antiquewhite;
+                    cursor: pointer;
+                    border: 1px solid;
+            }
+
+            .whatsapp_btn:hover  {
+                color: #f5feff;
+                font-size: 20px;
+                transition: all ease-in 0.05s;
+            }
+         a {
+            text-decoration: none;
+         }
+                    
+                        
+          footer {
+            font-family: sans-serif;
+            background-color: #020d10;
+            color: white;
+            border-radius: 25px;
+            margin: auto;
+            text-align:center;
+            padding:30px;
+            opacity:.7;
+          }
