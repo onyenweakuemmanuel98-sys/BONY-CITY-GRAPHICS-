@@ -138,7 +138,11 @@
             }
          a {
             text-decoration: none;
+                     color:white;
          }
+a p {
+            color:white;
+}
                     
                         
           footer {
